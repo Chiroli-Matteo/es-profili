@@ -1,0 +1,9 @@
+// persona.pug
+
+extends layout
+
+block content
+  div.container
+    h1 Profilo di #{persona}
+    img(src=`/img/${persona.toLowerCase()}.jpg`, alt=persona)
+    // Altri dettagli del profilo possono essere aggiunti qui

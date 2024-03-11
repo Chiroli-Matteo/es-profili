@@ -1,0 +1,9 @@
+// profili.pug
+
+extends layout
+
+block content
+  div.container
+    h1 Elenco dei Profili
+    each persona in ['James', 'Woods', 'Schumacher']
+      a.btn(href=`/profili/${persona.toLowerCase()}`)= persona
